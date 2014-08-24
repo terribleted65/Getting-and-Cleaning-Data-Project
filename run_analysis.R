@@ -33,13 +33,13 @@ cleaned_features_header <- gsub("^(f)","Freq",cleaned_features_header)
 ###
 # set testing data column names
 colnames(test_subjects_data) <- "subject_id"
-colnames(test_x_data) = cleaned_features_header
-colnames(test_y_data) = "activity_id"
+colnames(test_x_data) <- cleaned_features_header
+colnames(test_y_data) <- "activity_id"
 # set training data column names
 colnames(activity_type) <- c("activity_id", "activity_type")
 colnames(train_subjects_data) <- "subject_id"
-colnames(train_x_data) = cleaned_features_header
-colnames(train_y_data) = "activity_id"
+colnames(train_x_data) <- cleaned_features_header
+colnames(train_y_data) <- "activity_id"
 ###
 # merge the testing data by columns into one table and do the same with the
 # training data.  then combine the testing and training data by rows as they 
